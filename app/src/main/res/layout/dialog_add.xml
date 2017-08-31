@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/realLayout1">
+        <include layout="@layout/toolbar"></include>
+    </RelativeLayout>
+
+    <TextView
+        android:text="Task Name:"
+        android:layout_below="@id/realLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/tvTaskName"
+        android:layout_marginLeft="20dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTaskName"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/etTaskName" />
+
+    <TextView
+        android:text="Date : "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/etTaskName"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/tvTaskDate" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etDatePicker"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tvTaskDate"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="20dp"
+        android:focusable="false"
+         />
+
+    <TextView
+        android:text="Task Priority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etDatePicker"
+        android:id="@+id/tvTaskPriority"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTaskPriority"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:entries="@array/priority_array"
+        android:id="@+id/spPriority" />
+
+    <TextView
+        android:text="Task Status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spPriority"
+        android:id="@+id/tvTaskStatus"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTaskStatus"
+        android:entries="@array/status_array"
+        android:id="@+id/spStatus"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+</RelativeLayout>
