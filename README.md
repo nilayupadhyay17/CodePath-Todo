@@ -40,6 +40,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 As part of your pre-work submission, please reflect on the app and answer the following questions below:
 
 **Question 1:** "What are your reactions to the Android app development platform so far? Compare and contrast Android's approach to layouts and user interfaces in past platforms you've used."
+
 **Answer:** I have used Unity game engine before for game development and its good for a 3d rendering. Android native Ui is ideal for complex user interfaces
 
 **Question 2:** "Take a moment to reflect on the `ArrayAdapter` used in your pre-work. How would you describe an adapter in this context and what is its function in Android? Why do you think the adapter is important? Explain the purpose of the `convertView` in the `getView` method of the `ArrayAdapter`."
